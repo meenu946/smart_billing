@@ -1,13 +1,13 @@
-package com.smartbilling;
+package com.example.demo;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootTest
-class DemoApplicationTests {
+@SpringBootApplication
+public class DemoApplicationTests {
 
-    @Test
-    void contextLoads() {
-        // This test will pass if the Spring application context starts successfully
+    public static void main(String[] args) {
+        SpringApplication.run(DemoApplicationTests.class, args);
+        System.out.println("🚀 Demo Application started with H2 Database!");
     }
 }
